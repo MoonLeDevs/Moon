@@ -15,7 +15,7 @@ bot.on('guildMemberAdd', member => {
     }).catch(console.error)
 });
 
-const ban = require('./ban.js');
+const ban = require('.ban.js');
 require('./embed/RichEmbed');
 
 bot.on('message', function (message){
