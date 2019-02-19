@@ -40,4 +40,5 @@ bot.on('message', msg => {
 
 });
 
+const cfg require('./index.json'); // a garder en version desktop
 bot.login(token); //a garder en version heroku
