@@ -32,6 +32,12 @@ bot.on('message', function(msg){
 
 });
 
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
+
 
 
 bot.login(cfg.token);
