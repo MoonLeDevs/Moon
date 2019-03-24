@@ -32,5 +32,12 @@ bot.on('message', msg => {
         msg.reply("Pas mal , tu te substitue , touche une personne pour uttilisé l'attaque. ")
         console.log("Une personne c'est substitué")
     }
- 
-});
+    if (msg.content === prefix + "train"){
+        msg.reply("Tu est sur le point d'entrainer cette technique utilse le /confirm pour confirmer l'entrainement")
+        console.log("une personne et sur le point de s'entrainer")
+    {
+    if (msg.content === prefix + "confirm"){
+        msg.reply ("Bravo ! tu t'es entrainer a tu a augenter la puissance de ta technique de 20%")
+        console.log("une personne a augmenter de train")
+
+ });
