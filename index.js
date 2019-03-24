@@ -13,7 +13,7 @@ bot.on('ready', function () {
 bot.login(token)
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur, va lire les règles et fait ta fiche' + member.displayName)
+        return channel.send('Bienvenue sur le serveur, va lire les règles et appui sur la réaction pour avoir ton grade' + member.displayName)
         bot.on(`${member.displayName} à rejoind le serveur.`)
     }).catch(console.error)
 });
@@ -23,7 +23,7 @@ bot.on('guildMemberAdd', member => {
 bot.on('message', msg => {
     if (msg.content === "kick"){
         msg.reply("Ne reviens plus.")
-
+    }
     if (msg.content.match(/mpx en force/i)) {
             msg.reply('Je suis d\'accord avec toi la mpx est la meileure.')
     }
@@ -33,5 +33,3 @@ bot.on('message', msg => {
     }
  
 });
-
-bot.login(token); //a garder en version heroku
