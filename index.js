@@ -25,8 +25,8 @@ bot.on('message', msg => {
         msg.reply("Ne reviens plus.")
 
 bot.on('message', message => {
-    if(message.content === "fiche") { 
-          msg.reply('pour faire une fiche , tu dois aller dans le #fiches-personnages et en faire une en respectant le #model-fiche-personnage');
+    if(message.content === "faire une fiche") { 
+          msg.reply('Pour faire une fiche il faut aller dans #fiches-personnages');
 
     if (msg.content.match(/mpx en force/i)) {
             msg.reply('Je suis d\'accord avec toi la mpx est la meileure.')
