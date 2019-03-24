@@ -21,8 +21,8 @@ bot.on('guildMemberAdd', member => {
 
 
 bot.on('message', msg => {
-    if (msg.content === "kick"){
-        msg.reply("Ne reviens plus.")
+    if (msg.content === "sharingan"){
+        msg.reply("L'oeuil rouge ressort en toi ... C'est la technique du Sharingan ... La prochaine attaque de l'advairsaire tu copira.")
     }
     if (msg.content.match(/mpx en force/i)) {
             msg.reply('Je suis d\'accord avec toi la mpx est la meileure.')
