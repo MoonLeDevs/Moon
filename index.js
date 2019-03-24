@@ -33,4 +33,3 @@ bot.on('message', msg => {
     }
     if (msg.content === prefix + "sharingan"){
         msg.channel.send("tu n'a pas débloqué le sharingan")
-};
