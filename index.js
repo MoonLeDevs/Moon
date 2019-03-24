@@ -28,9 +28,9 @@ bot.on('message', msg => {
         msg.reply("t'es désirs son des ordre , des clônes apparait autour de lui.")
         console.log("Une personne ses clonées.")
     }
-    if (msg.content === prefix + "chaine"){
-        msg.channel.send("https://www.youtube.com/channel/UCOhGDL7a89EkC91H6Kp-Alg?view_as=subscriber")
-        console.log("Une personne a demandé pour aller sur ta chaine.")
+    if (msg.content === prefix + "substitution"){
+        msg.reply("Pas mal , tu te substitue , touche une personne pour uttilisé l'attaque. ")
+        console.log("Une personne c'est substitué")
     }
  
 });
