@@ -25,11 +25,9 @@ bot.on('message', msg => {
         msg.reply("Ne reviens plus.")
 
 bot.on('message', message => {
-if(message.content === "comment faire une fiche") { 
-message.channel.send("#fiches-personnages");
-} 
-});
-    }
+    if(message.content === "comment faire une fiche") { 
+          msg.reply('#fiches-personnages');
+
     if (msg.content.match(/mpx en force/i)) {
             msg.reply('Je suis d\'accord avec toi la mpx est la meileure.')
     }
