@@ -24,8 +24,8 @@ bot.on('message', msg => {
     if (msg.content === prefix + "sharingan"){
         msg.reply("L'oeuil rouge ressort en toi ... C'est la technique du Sharingan ... La prochaine attaque de l'advairsaire tu copira.")
     }
-    if (msg.content.match(/mpx en force/i)) {
-            msg.reply('Je suis d\'accord avec toi la mpx est la meileure.')
+    if (msg.content === prefix + "substitution){
+            msg.reply('Tu te charge la substitution touche une personne pour te substituer.')
     }
     if (msg.content === prefix + "multiclonage"){
         msg.channel.send("Une petite fumée se forme autour de lui , il se clone.")
