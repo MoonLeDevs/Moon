@@ -21,15 +21,16 @@ bot.on('guildMemberAdd', member => {
 
 
 bot.on('message', msg => {
-    if (msg.content === prefix + "sharingan"){
-        msg.reply("L'oeuil rouge ressort en toi ... C'est la technique du Sharingan ... La prochaine attaque de l'advairsaire tu copira.")
-    }
-    if (msg.content === prefix + "substitution"){
-            msg.reply('Tu te charge la substitution touche une personne pour te substituer.')
+    if (msg.content === "kick"){
+        msg.reply("Ne reviens plus.")
     }
     if (msg.content === prefix + "multiclonage"){
-        msg.channel.send("Une petite fumée se forme autour de lui , il se clone.")
-        console.log("Une personne ses clonées")
+        msg.reply("t'es désirs son des ordre , des clônes apparait autour de lui.")
+        console.log("Une personne a demandé pour aller sur ta chaine.")
+    }
+    if (msg.content === prefix + "chaine"){
+        msg.channel.send("https://www.youtube.com/channel/UCOhGDL7a89EkC91H6Kp-Alg?view_as=subscriber")
+        console.log("Une personne a demandé pour aller sur ta chaine.")
     }
  
 });
