@@ -26,7 +26,7 @@ bot.on('message', msg => {
     }
     if (msg.content === prefix + "multiclonage"){
         msg.reply("t'es désirs son des ordre , des clônes apparait autour de lui.")
-        console.log("Une personne a demandé pour aller sur ta chaine.")
+        console.log("Une personne ses clonées.")
     }
     if (msg.content === prefix + "chaine"){
         msg.channel.send("https://www.youtube.com/channel/UCOhGDL7a89EkC91H6Kp-Alg?view_as=subscriber")
