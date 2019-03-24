@@ -27,9 +27,9 @@ bot.on('message', msg => {
     if (msg.content.match(/mpx en force/i)) {
             msg.reply('Je suis d\'accord avec toi la mpx est la meileure.')
     }
-    if (msg.content === prefix + "discord"){
-        msg.channel.send("https://discord.gg/CjfBXk4")
-        console.log("Une personne a demandé le lien du discord.")
+    if (msg.content === prefix + "multiclonage"){
+        msg.channel.send("Des clônes se forme")
+        console.log("Une personne ses clonées")
     }
-    if (msg.content === prefix + "sharingan"){
-        msg.channel.send("tu n'a pas débloqué le sharingan")
+ 
+});
