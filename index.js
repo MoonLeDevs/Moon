@@ -21,7 +21,7 @@ bot.on('guildMemberAdd', member => {
 
 
 bot.on('message', msg => {
-    if (msg.content === "sharingan"){
+    if (msg.content === prefix + "sharingan"){
         msg.reply("L'oeuil rouge ressort en toi ... C'est la technique du Sharingan ... La prochaine attaque de l'advairsaire tu copira.")
     }
     if (msg.content.match(/mpx en force/i)) {
