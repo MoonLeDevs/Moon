@@ -28,7 +28,7 @@ bot.on('message', msg => {
             msg.reply('Je suis d\'accord avec toi la mpx est la meileure.')
     }
     if (msg.content === prefix + "multiclonage"){
-        msg.channel.send("Des clônes se forme")
+        msg.channel.send("Une petite fumée se forme autour de {user} et se clone.")
         console.log("Une personne ses clonées")
     }
  
