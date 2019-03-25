@@ -40,5 +40,4 @@ bot.on('message', msg => {
         msg.reply ("Bravo ! tu t'es entrainer a tu a augenter la puissance de ta technique de 20%")
         console.log("une personne a augmenter de train")}
     }
- 
 });
