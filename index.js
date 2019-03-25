@@ -40,12 +40,4 @@ bot.on('message', msg => {
         msg.reply ("Bravo ! tu t'es entrainer a tu a augenter la puissance de ta technique de 20%")
         console.log("une personne a augmenter de train")}
     }
-    if (msg.content === prefix + "ringan"){
-        msg.reply ("Mm ... L'oeuil devient mauve avec un rond noir tu a desormais le ringan")
-        console.log("une personne a augmenter de train")}
-    }
-    if (msg.content === prefix + "sharingan"){
-        msg.reply ("L'oeuil rouge ... C'est bien cela ... Le Sharingan !")
-        console.log("Sharingan apparu")}
-    }    
 });
