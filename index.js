@@ -8,7 +8,7 @@ const prefix = ("/");
 
 bot.on('ready', function () {
     console.log("Je suis prêt à être utilisé.")
-    bot.user.setActivity('RolePlay : https://discord.gg/CjfBXk4').catch(console.error)
+    bot.user.setActivity('faire le bot : https://discord.gg/CjfBXk4').catch(console.error)
 });
 bot.login(token)
 bot.on('guildMemberAdd', member => {
