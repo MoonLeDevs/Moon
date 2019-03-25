@@ -44,8 +44,8 @@ bot.on('message', msg => {
         msg.reply ("Mm ... L'oeuil devient mauve avec un rond noir tu a desormais le ringan")
         console.log("une personne a augmenter de train")}
     }
-    if (msg.content === prefix + "ringan"){
-        msg.reply ("Mm ... L'oeuil devient mauve avec un rond noir tu a desormais le ringan")
-        console.log("Ringan apparu")}
+    if (msg.content === prefix + "sharingan"){
+        msg.reply ("L'oeuil rouge ... C'est bien cela ... Le Sharingan !")
+        console.log("Sharingan apparu")}
     }    
 });
