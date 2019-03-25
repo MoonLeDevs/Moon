@@ -8,7 +8,7 @@ const prefix = ("/");
 
 bot.on('ready', function () {
     console.log("Je suis prêt à être utilisé.")
-    bot.user.setActivity('Surveiller').catch(console.error)
+    bot.user.setActivity('RolePlay : https://discord.gg/CjfBXk4').catch(console.error)
 });
 bot.login(token)
 bot.on('guildMemberAdd', member => {
@@ -39,5 +39,14 @@ bot.on('message', msg => {
     if (msg.content === prefix + "confirm"){
         msg.reply ("Bravo ! tu t'es entrainer a tu a augenter la puissance de ta technique de 20%")
         console.log("une personne a augmenter de train")
+    
     }
+    if (msg.content === prefix + "ringan"){
+        msg.reply ("Nany ? Ton oeuil a changé de couleur ... c'est le ringan !")
+        console.log("ringan apparu")
+    }
+    if (msg.content === prefix + "sharingan"){
+        msg.reply ("Comme Kakashi sensei ... Tu a l'oeuil rouge c'est le __sharingan__")
+        console.log("sharingan apparu")
+    }    
 });
