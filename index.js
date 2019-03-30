@@ -25,28 +25,28 @@ bot.on('message', msg => {
         msg.reply("Ne reviens plus.")
     }
     if (msg.content === prefix + "multiclonage"){
-        msg.reply("t'es désirs son des ordre , des clônes apparait autour de lui.")
+        msg.reply("ERROR LIBS NOT FOUND.")
         console.log("Une personne ses clonées.")
     }
     if (msg.content === prefix + "substitution"){
-        msg.reply("Pas mal , tu te substitue , touche une personne pour uttilisé l'attaque. ")
+        msg.reply("FIGHT:SUBSTITUTION-NOTFOUND. ")
         console.log("Une personne c'est substitué")
     }
     if (msg.content === prefix + "train"){
-        msg.reply("Tu est sur le point d'entrainer cette technique utilse le /confirm pour confirmer l'entrainement")
+        msg.reply("ERROR SYSTEME RESET")
         console.log("une personne et sur le point de s'entrainer")
     }
     if (msg.content === prefix + "confirm"){
-        msg.reply ("Bravo ! tu t'es entrainer a tu a augenter la puissance de ta technique de 20%")
+        msg.reply ("ERROR 98-2")
         console.log("une personne a augmenter de train")
     
     }
     if (msg.content === prefix + "ringan"){
-        msg.reply ("Nany ? Ton oeuil a changé de couleur ... c'est le ringan !")
+        msg.reply ("…§<]}[°^\(="&!&!;= !")
         console.log("ringan apparu")
     }
     if (msg.content === prefix + "sharingan"){
-        msg.reply ("Comme Kakashi sensei ... Tu a l'oeuil rouge c'est le __sharingan__")
+        msg.reply ("7("&!)&(#)#)#!")
         console.log("sharingan apparu")
     }    
 });
