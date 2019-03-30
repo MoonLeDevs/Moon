@@ -8,7 +8,7 @@ const prefix = ("/");
 
 bot.on('ready', function () {
     console.log("Je suis prêt à être utilisé.")
-    bot.user.setActivity('Manger Le Riz De Jean Dolri').catch(console.error)
+    bot.user.setActivity('#BackToBeforeReset').catch(console.error)
 });
 bot.login(token)
 bot.on('guildMemberAdd', member => {
