@@ -22,10 +22,10 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', msg => {
     if (msg.content === "sharingan"){
-        msg.reply("JE SUIS DE RETOUR ! :sharingan:")
+        msg.reply("JE SUIS DE RETOUR ! :Sharingan:")
     }
     if (msg.content === "MERCI ALEX"){
-        msg.reply("TKTP :sharingan:.")
+        msg.reply("TKTP :Sharingan:.")
         console.log("Une personne ses clonées.")
     }
     if (msg.content === prefix + "substitution"){
