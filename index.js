@@ -28,8 +28,8 @@ bot.on('message', msg => {
         msg.reply("TKTP :Sharingan:.")
         console.log("Une personne ses clonées.")
     }
-    if (msg.content === prefix + "substitution"){
-        msg.reply("FIGHT:SUBSTITUTION-NOTFOUND. ")
+    if (msg.content === "#BackToBeforeReset !"){
+        msg.reply("#BackToBeforeReset ! ")
         console.log("Une personne c'est substitué")
     }
     if (msg.content === prefix + "train"){
