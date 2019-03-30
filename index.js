@@ -21,11 +21,11 @@ bot.on('guildMemberAdd', member => {
 
 
 bot.on('message', msg => {
-    if (msg.content === "kick"){
-        msg.reply("Ne reviens plus.")
+    if (msg.content === "sharingan"){
+        msg.reply("JE SUIS DE RETOUR ! :sharingan:")
     }
-    if (msg.content === prefix + "multiclonage"){
-        msg.reply("ERROR LIBS NOT FOUND.")
+    if (msg.content === "MERCI ALEX"){
+        msg.reply("TKTP :sharingan:.")
         console.log("Une personne ses clonées.")
     }
     if (msg.content === prefix + "substitution"){
