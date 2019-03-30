@@ -42,11 +42,11 @@ bot.on('message', msg => {
     
     }
     if (msg.content === prefix + "ringan"){
-        msg.reply ("…§<]}[°^\(="&!&!;= !")
+        msg.reply ("NOT-FOUND")
         console.log("ringan apparu")
     }
     if (msg.content === prefix + "sharingan"){
-        msg.reply ("7("&!)&(#)#)#!")
+        msg.reply ("CONSOLEERRORSYNTAX")
         console.log("sharingan apparu")
     }    
 });
