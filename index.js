@@ -17,12 +17,24 @@ bot.on('guildMemberAdd', member => {
 });
 
 const ban = require('./kick et ban/ban');
-const kick = require('./kick et ban/kick');
 require('./embed/RichEmbed');
 
 bot.on('message', function (message){
     if (ban.match(message)){
         return ban.action(message)
+    }
+        
+    if (msg.content === prefix + "site"){
+    if (message.content.startsWith("-kick")) {
+        // Easy way to get member object though mentions.
+        var member= message.mentions.members.first();
+        // Kick
+        member.kick().then((member) => {
+            // Successmessage
+            message.channel.send(":wave: " + member.displayName + " a été expulser ");
+        }).catch(() => {
+             // Failmessage
+            message.channel.send("Impossible d/executer cette commande !");
     }
 });
 
