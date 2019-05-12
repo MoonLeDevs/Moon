@@ -23,5 +23,3 @@ bot.on('message', function (message){
         return ban.action(message)
     }
 });
-
-bot.login(token); //a garder en version heroku
