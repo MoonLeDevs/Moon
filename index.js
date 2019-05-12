@@ -35,6 +35,7 @@ bot.on('message', function (message){
         }).catch(() => {
              // Failmessage
             message.channel.send("Impossible d/executer cette commande !");
+            
     }
 });
 
