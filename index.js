@@ -23,3 +23,5 @@ bot.on('message', function (message){
         return ban.action(message)
     }
 });
+
+bot.login(token);
