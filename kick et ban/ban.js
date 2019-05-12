@@ -41,7 +41,8 @@ module.exports = class ban {
     await member.kick(reason)
       .catch(error => message.reply(`Lo siento ${message.author}, No pude patearlo xd por : ${error}`));
     message.reply(`${member.user.tag} se ha ido hacia el charcho tirao por ${message.author.tag} con rason: ${reason}`);
-          });
+
       }
     //}
 }
+    });
