@@ -20,7 +20,7 @@
     if(!reason) reason = "No reason provided";
     
     // Now, time for a swift kick in the nuts!
-      .catch(error => message.reply(`Lo siento ${message.author}, No pude patearlo xd por : ${error}`));
+      catch(error => message.reply(`Lo siento ${message.author}, No pude patearlo xd por : ${error}`));
     message.reply(`${member.user.tag} se ha ido hacia el charcho tirao por ${message.author.tag} con rason: ${reason}`);
 
       }
