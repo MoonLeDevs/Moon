@@ -23,8 +23,8 @@ bot.on('message', function (message){
     if (ban.match(message)){
         return ban.action(message)
     }
+});
         
-    if (msg.content === prefix + "site"){
     if (message.content.startsWith("-kick")) {
         // Easy way to get member object though mentions.
         var member= message.mentions.members.first();
@@ -34,9 +34,8 @@ bot.on('message', function (message){
             message.channel.send(":wave: " + member.displayName + " a été expulser ");
         }).catch(() => {
              // Failmessage
-            message.channel.send("Impossible d/executer cette commande !");
-            
-    }
+            message.channel.send("Impossible d/executer cette commande !");        
+        }
 });
 
 bot.login(token);
