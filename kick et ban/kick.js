@@ -1,18 +1,25 @@
-const prefix = ("-");
-
-module.exports = class kick {
-    static match (message) {
-      return message.content.startsWith('-kick')
-    }
-            
-    static action (message) {
-      const args = message.content.slice(prefix.length).split(/ +/);
-      const command = args.shift().toLowerCase();
-        if (!message.member.permissions.has('ADMINISTRATOR')) return message.reply('Accès Refusé : Permission **Admin** Requise. ');
-          const member = message.mentions.members.first();
-        if (!member) return message.reply('Commande Invalide, il faut mettre `-kick @user#1234`');
-          member.kick({
-          });
-      }
-    //}
+{
+     if (m.author.id != config.userid) { return; }
+          if (!m.guild) return
+          if(!m.member.hasPermission("KICK_MEMBERS"));
+          if (m.content.startsWith(".kick")) {
+    let auth = m.author
+    let user = m.mentions.users.first();
+          if (user) {
+    const member = m.guild.member(user);
+          if (member) {
+                member.kick("**Bye bye").then(() => {
+                m.reply(`${user.tag} a été kick`);
+                       }).catch(err => {
+                m.reply('I was unable to kick the member');
+                       console.error(err);
+                  });
+           } else {
+                m.reply('That user isn\'t in this guild!');
+           }
+    } else {
+                m.reply('You didn\'t mention the user to kick!');
+                m.delete()
+              }
+       }
 }
