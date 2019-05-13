@@ -26,12 +26,6 @@ bot.on('message', function (message){
 
 
 bot.on('message', msg => {
-    if (msg.content === prefix + "help"){
-        msg.channel.send("__Elementary Help__")
-        .addField("|Moderation-Menu|:hammer:|", "mhelp")
-        .addField("|Fun-Menu|:tada:|", "fhelp")
-        .addField("|RP-menu|:bar_chart:|", "rphelp**")
-    }
     if (msg.content.match(/salut/i)) {
             msg.reply('Je suis d\'accord avec toi.')
     }
