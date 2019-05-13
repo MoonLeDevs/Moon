@@ -25,7 +25,7 @@ bot.on('message', function (message){
     }
 });
     }     
-    bot.on(message.content.startsWith("-kick")) {
+    client.on(message.content.startsWith("-kick")) {
         var member= message.mentions.members.first();
         member.kick().then((member) => {
             message.channel.send(":wave: " + member.displayName + " a été expulser ");
