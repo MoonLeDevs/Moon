@@ -24,18 +24,14 @@ bot.on('message', function (message){
         return ban.action(message)
     }
 });
-        
-    if (message.content.startsWith("-kick")) {
-        // Easy way to get member object though mentions.
+    }     
+    bot.on(message.content.startsWith("-kick")) {
         var member= message.mentions.members.first();
-        // Kick
         member.kick().then((member) => {
-            // Successmessage
             message.channel.send(":wave: " + member.displayName + " a été expulser ");
         }).catch(() => {
-             // Failmessage
             message.channel.send("Impossible d/executer cette commande !");        
-     })
+    }
 });
 
 bot.login(token);
