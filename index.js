@@ -16,7 +16,6 @@ bot.on('guildMemberAdd', member => {
 });
 
 const ban = require('./kick et ban/ban');
-const kick = require ('./kick et ban/kick');
 require('./embed/RichEmbed');
 
 bot.on('message', function (message){
