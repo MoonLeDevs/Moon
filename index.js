@@ -30,8 +30,13 @@ bot.on('message', msg => {
     if (msg.content === "bonjour"){
         msg.reply("Heureux de te revoir parmis nous.")
     }
-    if (msg.content.match(/salut/i)) {
-            msg.reply('Je suis d\'accord avec toi.')
+    if (msg.content === prefix + "help"){
+        msg.channel.send("**__**Elementary Help**__")
+        .addField("**|Moderation-Menu|🔨|**", "**mhelp**")
+        .addField("**|Fun-Menu|🎉|**", "**fhelp**")
+        .addField("**|RP-menu|📊|**", "**rphelp**")
+        
+        
     }
     if (msg.content === prefix + "site"){
         msg.channel.send("https://alexpgm.000webhostapp.com/")
