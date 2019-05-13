@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const cfg = require('../index.json');
-const prefix = ("/");
+const prefix = ("-");
 
 bot.on('ready', function () {
     console.log("RichEmbed ready")
@@ -23,7 +23,7 @@ bot.on('message', function(msg){
                 .setColor(couleur())
                 //.setImage('https://cdn.pixabay.com/photo/2016/06/18/17/42/image-1465348_960_720.jpg')
                 .setThumbnail('https://yt3.ggpht.com/-izK19l8SYSQ/AAAAAAAAAAI/AAAAAAAAAVo/JQJ6p9FPYz4/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg')
-                .setURL('https://www.youtube.com/c/alexpgm')
+                .setURL('https://discord.gg/JCuUKV')
                 .setTimestamp()
                 .setFooter("Si il change de nom :" + msg.author.tag ,msg.author.displayAvatarURL);
                 msg.channel.send(RichEmbed);
