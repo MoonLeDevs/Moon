@@ -1,5 +1,4 @@
 {
-     if (m.author.id != config.userid) { return; }
           if (!m.guild) return
           if(!m.member.hasPermission("KICK_MEMBERS"));
           if (m.content.startsWith(".kick")) {
