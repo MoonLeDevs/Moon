@@ -32,9 +32,11 @@ bot.on('message', msg => {
     if (msg.content.match(/salut/i)) {
             msg.reply('Je suis d\'accord avec toi.')
     }
-    if (msg.content === prefix + "site"){
-        msg.channel.send("https://alexpgm.000webhostapp.com/")
-        console.log("Une personne a demandé pour aller sur ton site.")
+    if (msg.content === prefix + "help"){
+        msg.channel.send("__Elementary Help__")
+        .addField("|Moderation-Menu|:hammer:|", "mhelp")
+        .addField("|Fun-Menu|:tada:|", "fhelp")
+        .addField("|RP-menu|:bar_chart:|", "rphelp**")
     }
 
 });
