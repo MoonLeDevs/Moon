@@ -30,6 +30,7 @@ bot.on('message', msg => {
     if (msg.content === "bonjour"){
         msg.reply("Heureux de te revoir parmis nous.")
     }
+    
     if (msg.content === prefix + "help"){
         msg.channel.send("**__**Elementary Help**__")
         .addField("**|Moderation-Menu|🔨|**", "**mhelp**")
@@ -45,4 +46,4 @@ bot.on('message', msg => {
 
 });
 
-bot.login(cfg.token); //a garder en version desktop
+bot.login(token); //a garder en version desktop
