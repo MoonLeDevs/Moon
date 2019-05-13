@@ -1,4 +1,5 @@
 {
+          if( message.author.id != config.userid) { return; }
           if (!message.guild) return
           if(!message.member.hasPermission("KICK_MEMBERS"));
           if (message.content.startsWith(".kick")) {
